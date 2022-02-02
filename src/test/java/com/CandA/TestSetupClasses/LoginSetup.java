@@ -1,6 +1,5 @@
-package CandA.MidClasses;
+package com.CandA.TestSetupClasses;
 
-import CandA.BaseTest;
 import com.CandA.pages.LoginPage;
 import commonLibs.implementation.ElementControl;
 import commonLibs.implementation.SetupDriver;
@@ -39,7 +38,7 @@ public class LoginSetup extends BaseTest {
     @AfterMethod
     @Override
     public void tearDownAfterTestMethod() throws IOException {
-        //setupDriver.closeAllBrowsers();
+        setupDriver.closeAllBrowsers();
     }
 
     @AfterClass

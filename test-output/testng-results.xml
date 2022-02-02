@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-02T15:22:41 CET" name="Suite1" finished-at="2022-02-02T15:22:55 CET" duration-ms="14263">
+    <groups>
+    </groups>
+    <test started-at="2022-02-02T15:22:41 CET" name="Nopackage" finished-at="2022-02-02T15:22:55 CET" duration-ms="14263">
+      <class name="com.CandA.TestsClasses.LogInTest">
+        <test-method is-config="true" signature="setUpBeforeTestClass()[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:41 CET" name="setUpBeforeTestClass" finished-at="2022-02-02T15:22:41 CET" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestClass -->
+        <test-method is-config="true" signature="setUpBeforeTestMethod()[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:41 CET" name="setUpBeforeTestMethod" finished-at="2022-02-02T15:22:46 CET" duration-ms="5164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestMethod -->
+        <test-method signature="logInHappyPath(java.lang.String,java.lang.String)[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:46 CET" name="logInHappyPath" finished-at="2022-02-02T15:22:55 CET" duration-ms="8995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[offendor1000@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sifra6969!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInHappyPath -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:55 CET" name="tearDownAfterTestMethod" finished-at="2022-02-02T15:22:55 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestMethod -->
+        <test-method is-config="true" signature="tearDownAfterTestClass()[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:55 CET" name="tearDownAfterTestClass" finished-at="2022-02-02T15:22:55 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestClass -->
+      </class> <!-- com.CandA.TestsClasses.LogInTest -->
+    </test> <!-- Nopackage -->
+  </suite> <!-- Suite1 -->
+</testng-results>
