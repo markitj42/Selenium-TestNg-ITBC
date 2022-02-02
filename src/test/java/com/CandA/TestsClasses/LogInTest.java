@@ -1,7 +1,9 @@
-package CandA.Tests;
+package com.CandA.TestsClasses;
 
-import CandA.MidClasses.LoginSetup;
+
+import com.CandA.TestSetupClasses.LoginSetup;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class LogInTest extends LoginSetup {
@@ -11,9 +13,11 @@ public class LogInTest extends LoginSetup {
      * 
      * @throws InterruptedException
      */
+    @Parameters ({"email", "password"})
     @Test
-    public void logInHappyPath() throws InterruptedException {
-        logIn.loginToApplication("offendor1000@gmail.com", "Sifra6969!");
+    public void logInHappyPath(String email, String password) throws InterruptedException {
+        logIn.loginToApplication(email, password);
         Assert.assertEquals(elementControl.getTextFromElement(logIn.myAccMail), "offendor1000@gmail.com");
     }
+
 }
