@@ -16,34 +16,34 @@ import java.io.IOException;
 public class LoginPageSetup extends BaseTest {
     protected SetupDriver setupDriver;
     protected LoginPage logIn;
-    protected String url;
     protected WebDriver driver;
-    protected ElementControl elementControl;
+
 
     @BeforeClass
     @Override
     public void setUpBeforeTestClass() {
+        setupDriver = new SetupDriver(DriverType.CHROME);
     }
 
     @BeforeMethod
     @Override
     public void setUpBeforeTestMethod() {
-        url = "https://www.c-and-a.com/eu/en/shop";
-        setupDriver = new SetupDriver(DriverType.CHROME);
+        setupDriver.navigateToUrl("https://demoqa.com/login");
         driver = setupDriver.getDriver();
         logIn = new LoginPage(driver);
-        elementControl = new ElementControl(driver);
-        setupDriver.navigateToUrl(url);
+
+
     }
 
     @AfterMethod
     @Override
     public void tearDownAfterTestMethod() throws IOException {
-        setupDriver.closeAllBrowsers();
+
     }
 
     @AfterClass
     @Override
-    public void tearDownAfterTestClass() {
+    public void tearDownAfterTestClass() throws IOException {
+        setupDriver.closeAllBrowsers();
     }
 }

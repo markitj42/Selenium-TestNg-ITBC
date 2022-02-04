@@ -11,7 +11,7 @@
 
         <parameter name="permAddress" value="Gagarinova69"/>
         <classes>
-            <class name="com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests" />
+            <class name="com.ToolsQA.TestPackages.ElementsSectionTests.TextBoxTests" />
         </classes>
     </test>
 
@@ -23,7 +23,7 @@
         <parameter name="salary" value="5000"/>
         <parameter name="department" value="QA"/>
         <classes>
-            <class name="com.ToolsQA.TestsPackages.ElementsSectionTests.WebTablesTests"/>
+            <class name="com.ToolsQA.TestPackages.ElementsSectionTests.WebTablesTests"/>
         </classes>
     </test>
 </suite>

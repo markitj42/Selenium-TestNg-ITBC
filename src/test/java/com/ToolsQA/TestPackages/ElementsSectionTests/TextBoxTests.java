@@ -1,4 +1,4 @@
-package com.ToolsQA.TestsPackages.ElementsSectionTests;
+package com.ToolsQA.TestPackages.ElementsSectionTests;
 
 import com.ToolsQA.TestSetupPackages.ElementSectionSetup.TextBoxSetup;
 import org.testng.Assert;
