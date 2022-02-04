@@ -1,45 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-02T15:22:41 CET" name="Suite1" finished-at="2022-02-02T15:22:55 CET" duration-ms="14263">
+  <suite started-at="2022-02-03T20:22:24 CET" name="Suite1" finished-at="2022-02-03T20:22:34 CET" duration-ms="10523">
     <groups>
     </groups>
-    <test started-at="2022-02-02T15:22:41 CET" name="Nopackage" finished-at="2022-02-02T15:22:55 CET" duration-ms="14263">
-      <class name="com.CandA.TestsClasses.LogInTest">
-        <test-method is-config="true" signature="setUpBeforeTestClass()[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:41 CET" name="setUpBeforeTestClass" finished-at="2022-02-02T15:22:41 CET" duration-ms="19" status="PASS">
+    <test started-at="2022-02-03T20:22:24 CET" name="TextBox Test" finished-at="2022-02-03T20:22:34 CET" duration-ms="10523">
+      <class name="com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests">
+        <test-method is-config="true" signature="setUpBeforeTestClass()[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:24 CET" name="setUpBeforeTestClass" finished-at="2022-02-03T20:22:28 CET" duration-ms="4183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeTestClass -->
-        <test-method is-config="true" signature="setUpBeforeTestMethod()[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:41 CET" name="setUpBeforeTestMethod" finished-at="2022-02-02T15:22:46 CET" duration-ms="5164" status="PASS">
+        <test-method is-config="true" signature="setUpBeforeTestMethod()[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:28 CET" name="setUpBeforeTestMethod" finished-at="2022-02-03T20:22:30 CET" duration-ms="2076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeTestMethod -->
-        <test-method signature="logInHappyPath(java.lang.String,java.lang.String)[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:46 CET" name="logInHappyPath" finished-at="2022-02-02T15:22:55 CET" duration-ms="8995" status="PASS">
+        <test-method signature="textBoxHappyPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:30 CET" name="textBoxHappyPath" finished-at="2022-02-03T20:22:31 CET" duration-ms="1116" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[offendor1000@gmail.com]]>
+                <![CDATA[Marko Ilic]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Sifra6969!]]>
+                <![CDATA[ilic@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nebeska420]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Devilska69]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Name:Marko Ilic
+Email:ilic@gmail.com
+Current Address :Nebeska420
+Permanent Address :Devilska69] but found [Name:Marko Ilic
+Email:ilic@gmail.com
+Current Address :Nebeska420
+Permananet Address :Devilska69]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Name:Marko Ilic
+Email:ilic@gmail.com
+Current Address :Nebeska420
+Permanent Address :Devilska69] but found [Name:Marko Ilic
+Email:ilic@gmail.com
+Current Address :Nebeska420
+Permananet Address :Devilska69]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests.textBoxHappyPath(TextBoxTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textBoxHappyPath -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:31 CET" name="tearDownAfterTestMethod" finished-at="2022-02-03T20:22:31 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestMethod -->
+        <test-method is-config="true" signature="setUpBeforeTestMethod()[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:31 CET" name="setUpBeforeTestMethod" finished-at="2022-02-03T20:22:32 CET" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestMethod -->
+        <test-method signature="entersFullName(java.lang.String)[pri:1, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:32 CET" name="entersFullName" finished-at="2022-02-03T20:22:33 CET" duration-ms="699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Marko Ilic]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInHappyPath -->
-        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:55 CET" name="tearDownAfterTestMethod" finished-at="2022-02-02T15:22:55 CET" duration-ms="1" status="PASS">
+        </test-method> <!-- entersFullName -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:33 CET" name="tearDownAfterTestMethod" finished-at="2022-02-03T20:22:33 CET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterTestMethod -->
-        <test-method is-config="true" signature="tearDownAfterTestClass()[pri:0, instance:com.CandA.TestsClasses.LogInTest@11a9e7c8]" started-at="2022-02-02T15:22:55 CET" name="tearDownAfterTestClass" finished-at="2022-02-02T15:22:55 CET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUpBeforeTestMethod()[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:33 CET" name="setUpBeforeTestMethod" finished-at="2022-02-03T20:22:33 CET" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTestMethod -->
+        <test-method signature="entersPermanentAddress(java.lang.String)[pri:2, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:33 CET" name="entersPermanentAddress" finished-at="2022-02-03T20:22:34 CET" duration-ms="769" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gagarinova69]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Permanent Address :Gagarinova69] but found [Permananet Address :Gagarinova69]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Permanent Address :Gagarinova69] but found [Permananet Address :Gagarinova69]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests.entersPermanentAddress(TextBoxTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entersPermanentAddress -->
+        <test-method is-config="true" signature="tearDownAfterTestMethod()[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:34 CET" name="tearDownAfterTestMethod" finished-at="2022-02-03T20:22:34 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTestMethod -->
+        <test-method is-config="true" signature="tearDownAfterTestClass()[pri:0, instance:com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests@7692d9cc]" started-at="2022-02-03T20:22:34 CET" name="tearDownAfterTestClass" finished-at="2022-02-03T20:22:34 CET" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterTestClass -->
-      </class> <!-- com.CandA.TestsClasses.LogInTest -->
-    </test> <!-- Nopackage -->
+      </class> <!-- com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests -->
+    </test> <!-- TextBox Test -->
   </suite> <!-- Suite1 -->
 </testng-results>
