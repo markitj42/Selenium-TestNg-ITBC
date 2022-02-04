@@ -32,7 +32,6 @@ public class SetupDriver {
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                 }
-                default -> System.out.println("Invalid Browser Type");
             }
             driver.manage().window().maximize();
             driver.manage().deleteAllCookies();
@@ -42,14 +41,18 @@ public class SetupDriver {
     public void navigateToUrl(String url) {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadTime));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(elementDetectionTimeout));
-
         driver.get(url);
+
 
     }
 
     public void closeAllBrowsers() throws IOException {
         driver.quit();
-        Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+        //Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+    }
+
+    public void closeBrowser() {
+        driver.close();
     }
 
     public void setPageLoadTime(int pageLoadTime) {

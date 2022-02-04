@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ModularFramework(failed)">
+    <classes>
+      <class name="com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests">
+        <methods>
+          <include name="tearDownAfterTestMethod"/>
+          <include name="textBoxHappyPath"/>
+          <include name="setUpBeforeTestClass"/>
+          <include name="setUpBeforeTestMethod"/>
+          <include name="tearDownAfterTestClass"/>
+        </methods>
+      </class> <!-- com.ToolsQA.TestsPackages.ElementsSectionTests.TextBoxTests -->
+    </classes>
+  </test> <!-- ModularFramework(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
