@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
     public ElementControl elementControl;
-    WebDriver driver;
+    protected WebDriver driver;
 
 
     public BasePage(WebDriver driver) {

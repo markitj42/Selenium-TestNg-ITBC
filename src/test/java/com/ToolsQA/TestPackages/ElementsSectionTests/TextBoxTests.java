@@ -23,11 +23,11 @@ public class TextBoxTests extends TextBoxSetup {
         Assert.assertEquals(actualText, expectedText);
     }
 
-    @Parameters({"fullName"})
+    @Parameters({"name"})
     @Test(priority = 1)
-    public void entersFullName(String fullName) {
+    public void entersFullName(String name) {
 
-        textBox.enterFullName(fullName);
+        textBox.enterFullName(name);
         textBox.clickSubmitButton();
 
         String expectedText = "Name:Marko Ilic";
@@ -35,14 +35,14 @@ public class TextBoxTests extends TextBoxSetup {
         Assert.assertEquals(elementControl.getTextFromElement(textBox.boxWithData), expectedText);
     }
 
-    @Parameters({"permAddress"})
+    @Parameters({"permaAddress"})
     @Test(priority = 2)
-    public void entersPermanentAddress(String permAddress) {
+    public void entersPermanentAddress(String permaAddress) {
 
-        textBox.enterPermanentAddress(permAddress);
+        textBox.enterPermanentAddress(permaAddress);
         textBox.clickSubmitButton();
 
-        Assert.assertEquals(elementControl.getTextFromElement(textBox.boxWithData), "Permanent Address :Gagarinova69");
+        Assert.assertEquals(elementControl.getTextFromElement(textBox.boxWithData), "Permanent Address :Devilska69");
 
     }
 }

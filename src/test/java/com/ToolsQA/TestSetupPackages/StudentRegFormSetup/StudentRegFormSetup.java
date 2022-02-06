@@ -1,8 +1,7 @@
-package com.ToolsQA.TestSetupPackages.BookStoreSetup;
+package com.ToolsQA.TestSetupPackages.StudentRegFormSetup;
 
-import com.ToolsQA.BookStoreApplicationSection.LoginPage;
+import com.ToolsQA.PracticeForm.StudentRegistrationForm;
 import com.ToolsQA.TestSetupPackages.BaseTest;
-import commonLibs.implementation.ElementControl;
 import commonLibs.implementation.SetupDriver;
 import enums.DriverType;
 import org.openqa.selenium.WebDriver;
@@ -13,11 +12,10 @@ import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 
-public class LoginPageSetup extends BaseTest {
+public class StudentRegFormSetup extends BaseTest {
+    protected StudentRegistrationForm studentRegistrationForm;
     protected SetupDriver setupDriver;
-    protected LoginPage logIn;
     protected WebDriver driver;
-
 
     @BeforeClass
     @Override
@@ -27,12 +25,10 @@ public class LoginPageSetup extends BaseTest {
 
     @BeforeMethod
     @Override
-    public void setUpBeforeTestMethod() {
+    public void setUpBeforeTestMethod() throws InterruptedException {
+        setupDriver.navigateToUrl("https://demoqa.com/automation-practice-form");
         driver = setupDriver.getDriver();
-        logIn = new LoginPage(driver);
-        setupDriver.navigateToUrl("https://demoqa.com/login");
-
-
+        studentRegistrationForm = new StudentRegistrationForm(driver);
     }
 
     @AfterMethod
