@@ -1,15 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1" >
-    <test name="TextBox Test" >
+    <test name="TextBox full data Test" >
         <parameter name="name" value="Marko Ilic"/>
         <parameter name="email" value="ilic@gmail.com"/>
         <parameter name="currentAddress" value="Nebeska420"/>
         <parameter name="permaAddress" value="Devilska69"/>
-
-        <parameter name="fullName" value="Marko Ilic"/>
-
-        <parameter name="permAddress" value="Gagarinova69"/>
         <classes>
             <class name="com.ToolsQA.TestPackages.ElementsSectionTests.TextBoxTests" />
         </classes>
@@ -24,6 +20,37 @@
         <parameter name="department" value="QA"/>
         <classes>
             <class name="com.ToolsQA.TestPackages.ElementsSectionTests.WebTablesTests"/>
+        </classes>
+    </test>
+
+    <test name="CheckBox test">
+        <classes>
+            <class name="com.ToolsQA.TestPackages.ElementsSectionTests.CheckBoxTests"/>
+        </classes>
+    </test>
+
+    <test name="BookStore test">
+        <classes>
+            <class name="com.ToolsQA.TestPackages.BookStoreTests.BooksPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Student registration form test">
+        <parameter name="firstName" value="Marko"/>
+        <parameter name="lastName" value="Stevic"/>
+        <parameter name="email" value="marko@gmail.com"/>
+        <parameter name="gender" value="26"/>
+        <parameter name="month" value="february"/>
+        <parameter name="year" value="2100"/>
+        <parameter name="day" value="23"/>
+        <parameter name="subject" value="eng"/>
+        <parameter name="hobie" value="sports"/>
+        <parameter name="path" value="C:\Users\Komp\Desktop\QA\Java\ITBootcamp_FinalProject\screenshots\rickastley.jpg"/>
+        <parameter name="currentAddress" value="Gagarinova420"/>
+        <parameter name="state" value="NCR"/>
+        <parameter name="city" value="Delhi"/>
+        <classes>
+            <class name="com.ToolsQA.TestPackages.StudentRegFormTests.StudentRegFormTest"/>
         </classes>
     </test>
 </suite>

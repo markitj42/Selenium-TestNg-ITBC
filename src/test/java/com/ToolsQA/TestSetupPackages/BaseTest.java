@@ -13,7 +13,7 @@ public abstract class BaseTest {
     public abstract void setUpBeforeTestClass();
 
     @BeforeMethod
-    public abstract void setUpBeforeTestMethod();
+    public abstract void setUpBeforeTestMethod() throws InterruptedException;
 
     @AfterMethod
     public abstract void tearDownAfterTestMethod() throws IOException;

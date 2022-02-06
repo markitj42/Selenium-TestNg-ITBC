@@ -1,17 +1,20 @@
-package com.ToolsQA.TestSetupPackages.ElementSectionSetup;
+package com.ToolsQA.TestSetupPackages.StudentRegFormSetup;
 
-import com.ToolsQA.ElementsSection.WebTables;
+import com.ToolsQA.PracticeForm.StudentRegistrationForm;
 import com.ToolsQA.TestSetupPackages.BaseTest;
 import commonLibs.implementation.SetupDriver;
 import enums.DriverType;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 
-public class WebTablesSetup extends BaseTest {
-    private SetupDriver setupDriver;
-    protected WebTables webTables;
+public class StudentRegFormSetup extends BaseTest {
+    protected StudentRegistrationForm studentRegistrationForm;
+    protected SetupDriver setupDriver;
     protected WebDriver driver;
 
     @BeforeClass
@@ -22,10 +25,10 @@ public class WebTablesSetup extends BaseTest {
 
     @BeforeMethod
     @Override
-    public void setUpBeforeTestMethod() {
-        setupDriver.navigateToUrl("https://demoqa.com/webtables");
+    public void setUpBeforeTestMethod() throws InterruptedException {
+        setupDriver.navigateToUrl("https://demoqa.com/automation-practice-form");
         driver = setupDriver.getDriver();
-        webTables = new WebTables(driver);
+        studentRegistrationForm = new StudentRegistrationForm(driver);
     }
 
     @AfterMethod

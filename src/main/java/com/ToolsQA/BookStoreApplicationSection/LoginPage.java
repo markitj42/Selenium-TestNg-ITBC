@@ -17,7 +17,7 @@ public class LoginPage extends BasePage {
     @FindBy(id = "userName-value")
     WebElement userNameValue;
     @FindBy(id = "name")
-    WebElement invalidMessage;
+    public WebElement invalidMessage;
 
     //constructor
     public LoginPage(WebDriver driver) {

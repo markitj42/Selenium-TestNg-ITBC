@@ -28,9 +28,9 @@ public class LoginPageSetup extends BaseTest {
     @BeforeMethod
     @Override
     public void setUpBeforeTestMethod() {
-        setupDriver.navigateToUrl("https://demoqa.com/login");
         driver = setupDriver.getDriver();
         logIn = new LoginPage(driver);
+        setupDriver.navigateToUrl("https://demoqa.com/login");
 
 
     }
