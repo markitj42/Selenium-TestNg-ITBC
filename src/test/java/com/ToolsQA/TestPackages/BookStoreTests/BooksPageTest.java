@@ -69,9 +69,7 @@ public class BooksPageTest extends BooksPageSetup {
         booksPage.addBookToCollection();
         driver.navigate().to("https://demoqa.com/profile");
         booksPage.deleteAllBooks();
-        String alertText = elementControl.getTextFromAlert();
-        Thread.sleep(3000);
+        Assert.assertEquals(elementControl.getTextFromAlert(), "All Books deleted.");
         elementControl.acceptAlert();
-        Assert.assertEquals(alertText, "All BooksPage deleted.");
     }
 }

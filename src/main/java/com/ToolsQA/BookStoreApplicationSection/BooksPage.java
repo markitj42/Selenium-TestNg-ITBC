@@ -22,7 +22,7 @@ public class BooksPage extends BasePage {
     WebElement deleteBookButton;
     @FindBy(id = "closeSmallModal-ok")
     WebElement deleteBookOkButton;
-    @FindBy(xpath = "//button[contains(text(),'Delete All BooksPage')]")
+    @FindBy(xpath = "//button[contains(text(),'Delete All Books')]")
     WebElement deleteAllBooks;
     @FindBy(id = "closeSmallModal-ok")
     WebElement deleteAllBooksOkButton;
@@ -30,6 +30,10 @@ public class BooksPage extends BasePage {
     @FindBy(className = "rt-tr")
     public WebElement booksInProfile;
 
+    /**
+     * This method adds a book to your collection
+     * @throws InterruptedException
+     */
     public void addBookToCollection() throws InterruptedException {
         elementControl.clickOnHoveredElement(bookToAdd);
         elementControl.clickElement(addToUrCollectionButton);
@@ -37,10 +41,17 @@ public class BooksPage extends BasePage {
         elementControl.acceptAlert();
     }
 
+    /**
+     *  This method brings you back to the store
+     */
     public void backToBookStore() {
         elementControl.clickElement(backToBookStoreButton);
     }
 
+    /**
+     * This method deletes a book from your collection and accept alert that pops out.
+     * @throws InterruptedException
+     */
     public void deleteBook() throws InterruptedException {
         elementControl.clickElement(deleteBookButton);
         elementControl.clickElement(deleteBookOkButton);
@@ -48,8 +59,12 @@ public class BooksPage extends BasePage {
         elementControl.acceptAlert();
     }
 
+    /**
+     * This method deletes all the books from your collection and accept alert that pops out
+     * @throws InterruptedException
+     */
     public void deleteAllBooks() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteAllBooks);
+        //((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteAllBooks);
         elementControl.clickElement(deleteAllBooks);
         elementControl.clickElement(deleteAllBooksOkButton);
         Thread.sleep(3000);

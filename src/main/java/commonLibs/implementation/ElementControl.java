@@ -58,6 +58,7 @@ public class ElementControl {
         Actions hover = new Actions(driver);
         hover.moveToElement(element).build().perform();
     }
+
     public void clickOnHoveredElement(WebElement element) {
         Actions hover = new Actions(driver);
         hover.moveToElement(element).click().build().perform();

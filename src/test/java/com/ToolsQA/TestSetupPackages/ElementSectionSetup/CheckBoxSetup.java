@@ -2,7 +2,6 @@ package com.ToolsQA.TestSetupPackages.ElementSectionSetup;
 
 import com.ToolsQA.ElementsSection.CheckBox;
 import com.ToolsQA.TestSetupPackages.BaseTest;
-import commonLibs.implementation.ElementControl;
 import commonLibs.implementation.SetupDriver;
 import enums.DriverType;
 import org.openqa.selenium.WebDriver;

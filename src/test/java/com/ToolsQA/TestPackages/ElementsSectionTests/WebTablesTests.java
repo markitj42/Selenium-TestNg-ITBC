@@ -9,11 +9,15 @@ import org.testng.annotations.Test;
 public class WebTablesTests extends WebTablesSetup {
 
     /**
-     *  This Test adds user to the table.
+     * Happy path test
+     *  This Test adds user to the table and checks if the user is added
      *  Steps to reproduce:
      *  1. Open url "demoqa.com/webtables"
      *  2. Add 1 user
      *  3. Assert that user is added.
+     *
+     *  Expected results: User is added to the table
+     *
      * @param firstName First name of user
      * @param lastName Last name of user
      * @param email Email of user
@@ -32,12 +36,16 @@ public class WebTablesTests extends WebTablesSetup {
     }
 
     /**
+     * Happy path test
      *  This Test adds user, after that user is deleted, test checks if the user is deleted.
      *  Steps to reproduce:
      *  1. Open url "demoqa.com/webtables"
      *  2. Add 1 user
      *  3. Delete that user
      *  4. Assert that added user is deleted
+     *
+     *  Expected results: user is deleted from the table
+     *
      * @param firstName First name of user
      * @param lastName Last name of user
      * @param email Email of user

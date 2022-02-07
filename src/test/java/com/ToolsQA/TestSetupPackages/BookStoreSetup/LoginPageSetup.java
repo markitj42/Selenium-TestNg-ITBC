@@ -17,7 +17,7 @@ public class LoginPageSetup extends BaseTest {
     protected SetupDriver setupDriver;
     protected LoginPage logIn;
     protected WebDriver driver;
-
+    protected ElementControl elementControl;
 
     @BeforeClass
     @Override
@@ -31,8 +31,7 @@ public class LoginPageSetup extends BaseTest {
         driver = setupDriver.getDriver();
         logIn = new LoginPage(driver);
         setupDriver.navigateToUrl("https://demoqa.com/login");
-
-
+        elementControl = new ElementControl(driver);
     }
 
     @AfterMethod
