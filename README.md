@@ -15,6 +15,7 @@ This project uses the following:
      git clone -https://github.com/markitj42/Selenium-TestNg-ITBC.git
 ```
 - Open your IDEA
+- Install the dependencies
 - Run "pom.xml" file
 
 
