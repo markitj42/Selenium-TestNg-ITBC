@@ -39,18 +39,24 @@
         <parameter name="firstName" value="Marko"/>
         <parameter name="lastName" value="Stevic"/>
         <parameter name="email" value="marko@gmail.com"/>
-        <parameter name="gender" value="26"/>
-        <parameter name="month" value="february"/>
+        <parameter name="gender" value="male"/>
+        <parameter name="number" value="0664206969"/>
+        <parameter name="month" value="January"/>
         <parameter name="year" value="2100"/>
         <parameter name="day" value="23"/>
-        <parameter name="subject" value="eng"/>
         <parameter name="hobie" value="sports"/>
-        <parameter name="path" value="C:\Users\Komp\Desktop\QA\Java\ITBootcamp_FinalProject\screenshots\rickastley.jpg"/>
+        <parameter name="path" value="C:\Users\offen\IdeaProjects\Selenium-TestNg-ITBC\screenshots\rickastley.jpg"/>
         <parameter name="currentAddress" value="Gagarinova420"/>
-        <parameter name="state" value="NCR"/>
-        <parameter name="city" value="Delhi"/>
         <classes>
             <class name="com.ToolsQA.TestPackages.StudentRegFormTests.StudentRegFormTest"/>
+        </classes>
+    </test>
+
+    <test name="Log in tests">
+        <parameter name="userName" value="markitj"/>
+        <parameter name="password" value="Sifra6969!"/>
+        <classes>
+            <class name="com.ToolsQA.TestPackages.BookStoreTests.LogInTest"/>
         </classes>
     </test>
 </suite>

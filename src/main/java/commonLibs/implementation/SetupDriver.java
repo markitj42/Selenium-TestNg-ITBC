@@ -42,8 +42,6 @@ public class SetupDriver {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadTime));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(elementDetectionTimeout));
         driver.get(url);
-
-
     }
 
     public void closeAllBrowsers() throws IOException {

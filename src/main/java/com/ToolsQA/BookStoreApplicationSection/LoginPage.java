@@ -18,6 +18,8 @@ public class LoginPage extends BasePage {
     WebElement userNameValue;
     @FindBy(id = "name")
     public WebElement invalidMessage;
+    @FindBy(xpath = "//button[contains(text(),'Log out')]")
+    public WebElement logOutButton;
 
     //constructor
     public LoginPage(WebDriver driver) {

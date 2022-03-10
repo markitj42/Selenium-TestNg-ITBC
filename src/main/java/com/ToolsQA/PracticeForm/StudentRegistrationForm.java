@@ -36,7 +36,7 @@ public class StudentRegistrationForm extends BasePage {
     @FindBy(className = "react-datepicker__day")
     List<WebElement> dayPicker;
 
-    @FindBy(id = "subjectsContainer")
+    @FindBy(xpath = "//div[@id='subjectsContainer']")
     WebElement subject;
     @FindBy(className = "subjects-auto-complete__menu")
     List<WebElement> suggestions;
@@ -59,6 +59,8 @@ public class StudentRegistrationForm extends BasePage {
 
     @FindBy(id = "submit")
     WebElement submitButton;
+    @FindBy(id = "example-modal-sizes-title-lg")
+    public WebElement confirmationMssg;
 
     /**
      * This method enters user First name and Last name
@@ -89,6 +91,14 @@ public class StudentRegistrationForm extends BasePage {
                 return;
             }
         }
+    }
+
+    /**
+     * This method enters user number based on the string you pass to the method
+     * @param number User mobile number
+     */
+    public void enterNumber(String number) {
+        elementControl.sendText(userNumber, number);
     }
 
     /**
@@ -145,7 +155,6 @@ public class StudentRegistrationForm extends BasePage {
      * @param path Path to the picture
      */
     public void uploadPicture(String path) {
-        elementControl.clickElement(uploadPicture);
         elementControl.sendText(uploadPicture, path);
     }
 
@@ -180,6 +189,7 @@ public class StudentRegistrationForm extends BasePage {
      * This method click on the submit button to finish Student Registration form.
      */
     public void clickSubmitButton() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
         elementControl.clickOnHoveredElement(submitButton);
     }
 

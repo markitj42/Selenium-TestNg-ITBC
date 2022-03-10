@@ -7,11 +7,14 @@ import org.testng.annotations.Test;
 public class CheckBoxTests extends CheckBoxSetup {
 
     /**
+     * Happy path test
      * This test checks if elements are unchecked:
      * Steps to reproduce:
      * 1. Open url = demoqa.com/checkbox
      * 2. Click on the + button to expand all the elements
      * 3. Assert that list of elements is unchecked
+     *
+     * Expected results: all elements are unchecked
      */
     @Test
     public void isAllBoxesUnchecked() {
@@ -20,11 +23,14 @@ public class CheckBoxTests extends CheckBoxSetup {
     }
 
     /**
+     * Happy path test
      * This test checks if element with name "Home" is checked
      * Steps to reproduce:
      * 1. Open url demoqa.com/checkbox
      * 2. Click on the "Home" box to check the element
      * 3. Assert that "Home" box is checked
+     *
+     * Expected results: all elements are checked
      */
     @Test
     public void isHomeBoxChecked() {
@@ -33,12 +39,15 @@ public class CheckBoxTests extends CheckBoxSetup {
     }
 
     /**
+     * Happy path test
      * This test checks if list of checked elements is 17 when you click on the Home box after you expand all the elements
      * Steps to reproduce:
      * 1. Open url demoqa.com/checkbox
      * 2. Click on the + button to expand the list
      * 3. Click on the Home box to check all the elements
      * 4. Assert that the size of the checked elements is 17.
+     *
+     * Expected results: number of checked elements is 17.
      */
     @Test
     public void isSizeOfCheckedElements17() {

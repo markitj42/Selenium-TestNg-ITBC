@@ -27,6 +27,7 @@ public class LogInTest extends LoginPageSetup {
     public void loginToBookStore(String userName, String password) {
         logIn.loginToApplication(userName, password);
         Assert.assertEquals(logIn.getUserNameValue(), userName);
+        elementControl.clickElement(logIn.logOutButton);
     }
 
     /**
@@ -45,7 +46,8 @@ public class LogInTest extends LoginPageSetup {
     @Test
     public void loginToBookStoreWithInvalidPassword() {
         logIn.loginToApplication("markitj", "sifra6969!");
-        Assert.assertTrue(logIn.invalidMessage.isDisplayed());
+        Assert.assertTrue(driver.getPageSource().contains("Invalid username or password!"));
+        elementControl.clickElement(logIn.logOutButton);
     }
 
     /**
